@@ -90,6 +90,8 @@ const PostItem: React.FC<PostItemContentProps> = ({
       cursor={singlePostView ? "unset" : "pointer"}
       _hover={{ borderColor: singlePostView ? "none" : "gray.500" }}
       onClick={() => onSelectPost && post && onSelectPost(post, postIdx!)}
+      boxShadow="md"
+      mb={4}
     >
       <Flex
         direction="column"
