@@ -12,7 +12,6 @@ const PersonalHome: React.FC = () => {
       border="1px solid"
       borderColor="gray.300"
       position="sticky"
-      boxShadow="lg"
     >
       <Flex
         align="flex-end"
@@ -34,10 +33,8 @@ const PersonalHome: React.FC = () => {
           <Text fontSize="9pt">
             Your personal Reddit frontpage, built for you.
           </Text>
-          <Button height="30px" colorScheme="blue">
-            Create Post
-          </Button>
-          <Button variant="outline" height="30px" colorScheme="blue">
+          <Button height="30px">Create Post</Button>
+          <Button variant="outline" height="30px">
             Create Community
           </Button>
         </Stack>
@@ -45,5 +42,4 @@ const PersonalHome: React.FC = () => {
     </Flex>
   );
 };
-
 export default PersonalHome;
